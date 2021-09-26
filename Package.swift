@@ -21,10 +21,12 @@ let package = Package(
             path: "TLPhotoPicker",
             exclude: ["Classes/TLBundle.swift"],
             resources: [
-                .process("TLPhotoPicker/Classes/TLCollectionTableViewCell.xib"),
-                .process("TLPhotoPicker/Classes/TLPhotoCollectionViewCell.xib"),
-                .process("TLPhotoPicker/Classes/TLPhotosPickerViewController.xib"),
-                .process("TLPhotoPicker/Assets.xcassets")
+                .process("Classes/TLCollectionTableViewCell.xib"),
+                .process("Classes/TLPhotoCollectionViewCell.xib"),
+                .process("Classes/TLPhotosPickerViewController.xib"),
+                .process("Assets.xcassets"),
+                .process("TLPhotoPicker/info.plist"),
+                .process("TLPhotoPickerController.bundle")
             ]
         )
     ]
